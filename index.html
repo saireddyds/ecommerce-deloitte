@@ -3,17 +3,80 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--    stylesheets    -->
+    <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--    custom stylesheets    -->
     <link rel="stylesheet" href="style.css" type="text/css" />
+
     <!--    java script    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+    <div class="wrapper container">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-section-wrapper">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="inner-container">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info custom-btn">
+                                <i class="fas fa-align-left"></i>
+                            </button>
+                            <span class="p-normal">HOME</span>
+                            <span class="p-normal">SHOP</span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-sm-5 nav-sidebar-wrapper">
+                <div>
+                    <div class="p-normal font-ash pb-5">
+                        <div>FILTER BY</div>
+                    </div>
+                    <div class="border-ash">
+                        <div data-toggle="collapse" data-target="#collection"aria-expanded="false" class="side-menu p-normal collapsed pb-2">
+                            <div>Collection</div>
+                            <img src="./assets/images/blue-arrow-icon.svg">
+                        </div>
+                        <div class="p-normal collapse" id="collection">
+                            <div>India Collection</div>
+                            <div>USA Collection</div>
+                        </div>
+                    </div>
+                    <div class="border-ash">
+                        <div data-toggle="collapse" data-target="#color"aria-expanded="false" class="side-menu p-normal collapsed pb-2">
+                            <div>Color</div>
+                            <img src="./assets/images/blue-arrow-icon.svg">
+                        </div>
+                        <div class="p-normal collapse" id="color">
+                            <div>Brown</div>
+                            <div>Teak</div>
+                        </div>
+                    </div>
+                    <div class="border-ash">
+                        <div data-toggle="collapse" data-target="#category"aria-expanded="false" class="side-menu p-normal collapsed pb-2">
+                            <div>Category</div>
+                            <img src="./assets/images/blue-arrow-icon.svg">
+                        </div>
+                        <div class="p-normal collapse" id="category">
+                            <div>Living Room</div>
+                            <div>Bed Room</div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="col-sm-7 product-grid-view-wrapper">
+                <h1>Products Comes here</h1>
+            </section>
+        </div>
+    </div>
 
 </body>
 </html>
