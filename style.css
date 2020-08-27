@@ -1,3 +1,67 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+html {
+  font-size: 10px;
+}
 
+.p-max {
+  font-size: 2.6rem;
+  line-height: 3rem;
+}
+
+.p-normal {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.p-medium {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+body {
+  font-family: "Apple SD Gothic Neo";
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.nav-sidebar-wrapper {
+  min-height: 100vh;
+  width: 25rem;
+  padding: 1rem;
+}
+.nav-sidebar-wrapper.hide {
+  display: none;
+}
+.nav-sidebar-wrapper .side-menu {
+  display: flex;
+  justify-content: space-between;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.nav-sidebar-wrapper .side-menu.collapsed img {
+  transform: rotate(180deg);
+}
+.nav-sidebar-wrapper .border-ash {
+  border-bottom: 1px solid #86929a;
+  margin-bottom: 2rem;
+}
+
+.font-ash {
+  color: #86929a;
+}
+
+.header-section-wrapper .inner-container span {
+  margin-left: 4.5rem;
+}
+
+.custom-btn {
+  border: 0;
+  background: black;
+  width: 35px;
+  height: 35px;
+}
 
 /*# sourceMappingURL=style.css.map */
