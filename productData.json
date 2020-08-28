@@ -1,0 +1,20 @@
+[
+  {
+    "productName": "Coombes",
+    "productMedia": "./assets/images/sample1.jpg",
+    "productCategory": "LOUNGE",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample1.jpg",
+    "productCategory": "LOUNGE",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Bed",
+    "productMedia": "./assets/images/sample1.jpg",
+    "productCategory": "LOUNGE",
+    "productPrice": "$2,600"
+  }
+]
