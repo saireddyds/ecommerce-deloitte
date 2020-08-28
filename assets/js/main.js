@@ -96,19 +96,33 @@ $(document).ready(function () {
             primarySlider.sync(secondarySlider).mount();
         }, 500);
     });
-});
-
-//util functions which can be reused// we can create a new js for this aw well
-    class Util {
-        static getSelectedCategoryCode($element) {
-            let selectedCategoryCode = [];
-            $element.each(function () {
-                if ($(this).hasClass('selected')) {
-                    selectedCategoryCode.push($(this).data("category-filter"));
-                }
-            });
-            return selectedCategoryCode;
-        }
+    $('.js-page-reload').on('click', function() {
+        location.reload();
+    });
+    if ($("#isMobile").is(':visible')) {
+        $('#sidebarCollapse').click();
     }
+});
+//refresh page on browser resize
+$(window).bind('resize', function(e)
+{
+    if (window.RT) clearTimeout(window.RT);
+    window.RT = setTimeout(function()
+    {
+        this.location.reload(false); /* false to get page from cache */
+    }, 200);
+});
+//util functions which can be reused// we can create a new js for this aw well
+class Util {
+    static getSelectedCategoryCode($element) {
+        let selectedCategoryCode = [];
+        $element.each(function () {
+            if ($(this).hasClass('selected')) {
+                selectedCategoryCode.push($(this).data("category-filter"));
+            }
+        });
+        return selectedCategoryCode;
+    }
+}
 
 
