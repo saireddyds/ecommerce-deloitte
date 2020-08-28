@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 html {
   font-size: 10px;
@@ -62,6 +63,40 @@ body {
   background: black;
   width: 35px;
   height: 35px;
+}
+
+.product-grid-view-wrapper .product-interior {
+  padding-top: 4rem;
+}
+.product-grid-view-wrapper .product-interior .product-img {
+  height: 255px;
+  width: auto;
+}
+.product-grid-view-wrapper .product-interior .product-name {
+  position: absolute;
+  bottom: -1.5rem;
+  background: #ffffff;
+  width: 180px;
+}
+.product-grid-view-wrapper .product-interior .product-name div:first-child {
+  padding-top: 1.5rem;
+}
+.product-grid-view-wrapper .product-interior .price {
+  float: right;
+  padding-top: 0.5rem;
+}
+.product-grid-view-wrapper .rating {
+  padding-top: 3rem;
+}
+.product-grid-view-wrapper .rating > span:hover:before {
+  content: "★";
+  position: absolute;
+}
+.product-grid-view-wrapper .rating span {
+  font-size: 1.5rem;
+}
+.product-grid-view-wrapper .rating img {
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */
