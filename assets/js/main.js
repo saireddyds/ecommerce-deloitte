@@ -99,8 +99,11 @@ $(document).ready(function () {
     $('.js-page-reload').on('click', function() {
         location.reload();
     });
+    if ($("#isMobile").is(':visible')) { // on page load
+        $('#sidebarCollapse').click();
+    }
     $(window).resize(function (event) {
-        if ($("#isMobile").is(':visible')) {
+        if ($("#isMobile").is(':visible')) { // on browser window resize
             $('#sidebarCollapse').click();
         } else {
             $('#sidebar').removeClass('hide');
