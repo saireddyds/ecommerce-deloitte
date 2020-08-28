@@ -17,12 +17,24 @@
     <script src="assets/js/main.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if(xhttp.readyState == 4 && xhttp.status == 200) {
+                var javabj = JSON.parse(xhttp.response);
+                document.getElementById('divContent').innerHTML = javabj.name;
+            }
+        }
+        xhttp.open('GET',"data.json", true);
+        xhttp.send();
+    </script>
 </head>
 <body>
     <div class="wrapper container">
         <div class="row">
             <div class="col-12">
                 <div class="header-section-wrapper">
+                    <div id="divContent"></div>
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="inner-container">
                             <button type="button" id="sidebarCollapse" class="btn btn-info custom-btn">
@@ -34,8 +46,9 @@
                     </nav>
                 </div>
             </div>
+            <div id="id01"></div>
             <!-- Sidebar -->
-            <nav id="sidebar" class="col-sm-5 nav-sidebar-wrapper">
+            <nav id="sidebar" class="col-sm-3 nav-sidebar-wrapper">
                 <div>
                     <div class="p-normal font-ash pb-5">
                         <div>FILTER BY</div>
@@ -72,8 +85,169 @@
                     </div>
                 </div>
             </nav>
-            <section class="col-sm-7 product-grid-view-wrapper">
-                <h1>Products Comes here</h1>
+            <section class="col-sm-9 product-grid-view-wrapper">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-interior position-relative">
+                            <img src="./assets/images/sample1.jpg" class="product-img">
+                            <div class="product-name">
+                                <div class="p-normal">Coombes</div>
+                                <div>LOUNGE</div>
+                            </div>
+                            <div class="price p-medium">
+                                $2,600
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span>
+                            <img src="./assets/images/cart-dark.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-interior position-relative">
+                            <img src="./assets/images/sample1.jpg" class="product-img">
+                            <div class="product-name">
+                                <div class="p-normal">Coombes</div>
+                                <div>LOUNGE</div>
+                            </div>
+                            <div class="price p-medium">
+                                $2,600
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span>
+                            <img src="./assets/images/cart-dark.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-interior position-relative">
+                            <img src="./assets/images/sample1.jpg" class="product-img">
+                            <div class="product-name">
+                                <div class="p-normal">Coombes</div>
+                                <div>LOUNGE</div>
+                            </div>
+                            <div class="price p-medium">
+                                $2,600
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span>
+                            <img src="./assets/images/cart-dark.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-interior position-relative">
+                            <img src="./assets/images/sample1.jpg" class="product-img">
+                            <div class="product-name">
+                                <div class="p-normal">Coombes</div>
+                                <div>LOUNGE</div>
+                            </div>
+                            <div class="price p-medium">
+                                $2,600
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span>
+                            <img src="./assets/images/cart-dark.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-interior position-relative">
+                            <img src="./assets/images/sample1.jpg" class="product-img">
+                            <div class="product-name">
+                                <div class="p-normal">Coombes</div>
+                                <div>LOUNGE</div>
+                            </div>
+                            <div class="price p-medium">
+                                $2,600
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span>
+                            <img src="./assets/images/cart-dark.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-interior position-relative">
+                            <img src="./assets/images/sample1.jpg" class="product-img">
+                            <div class="product-name">
+                                <div class="p-normal">Coombes</div>
+                                <div>LOUNGE</div>
+                            </div>
+                            <div class="price p-medium">
+                                $2,600
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span>
+                            <img src="./assets/images/cart-dark.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-interior position-relative">
+                            <img src="./assets/images/sample1.jpg" class="product-img">
+                            <div class="product-name">
+                                <div class="p-normal">Coombes</div>
+                                <div>LOUNGE</div>
+                            </div>
+                            <div class="price p-medium">
+                                $2,600
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span>
+                            <img src="./assets/images/cart-dark.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-interior position-relative">
+                            <img src="./assets/images/sample1.jpg" class="product-img">
+                            <div class="product-name">
+                                <div class="p-normal">Coombes</div>
+                                <div>LOUNGE</div>
+                            </div>
+                            <div class="price p-medium">
+                                $2,600
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span>
+                            <img src="./assets/images/cart-dark.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-interior position-relative">
+                            <img src="./assets/images/sample1.jpg" class="product-img">
+                            <div class="product-name">
+                                <div class="p-normal">Coombes</div>
+                                <div>LOUNGE</div>
+                            </div>
+                            <div class="price p-medium">
+                                $2,600
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span>
+                            <img src="./assets/images/cart-dark.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-interior position-relative">
+                            <img src="./assets/images/sample1.jpg" class="product-img">
+                            <div class="product-name">
+                                <div class="p-normal">Coombes</div>
+                                <div>LOUNGE</div>
+                            </div>
+                            <div class="price p-medium">
+                                $2,600
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span>
+                            <img src="./assets/images/cart-dark.svg">
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </div>

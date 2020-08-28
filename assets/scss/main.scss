@@ -47,6 +47,43 @@ body {
   width: 35px;
   height: 35px;
 }
+//product grid styles starts here
+.product-grid-view-wrapper {
+  .product-interior {
+    padding-top: 4rem;
+    .product-img {
+      height: 255px;
+      width: auto;
+    }
+    .product-name {
+      position: absolute;
+      bottom: -1.5rem;
+      background: $primary-color;
+      width: 180px;
+      div:first-child {
+        padding-top: 1.5rem;
+      }
+    }
+    .price {
+      float: right;
+      padding-top: 0.5rem;
+    }
+
+  }
+  .rating  {
+    padding-top: 3rem;
+    & > span:hover:before {
+      content: "\2605";
+      position: absolute;
+    }
+    span {
+      font-size: 1.5rem;
+    }
+    img {
+      float: right;
+    }
+  }
+}
 
 
 
