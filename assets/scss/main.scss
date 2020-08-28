@@ -53,7 +53,12 @@ body {
 //product grid styles starts here
 .product-grid-view-wrapper {
   .product-interior {
+    width: 270px;
     padding-top: 4rem;
+    cursor: pointer;
+    @include phone {
+      width: 100%;
+    }
     .product-img {
       height: 255px;
       width: 270px;
@@ -85,6 +90,7 @@ body {
 
   }
   .rating  {
+    width: 270px;
     padding-top: 3rem;
     & > span:hover:before {
       content: "\2605";
@@ -101,6 +107,25 @@ body {
 .selected {
   background: $secondary-color;
   color: $primary-color;
+}
+.splide {
+  width: 395px;
+  @include phone {
+    width: 338px;
+  }
+}
+.splide__slide img {
+  width : 200px;
+  height: auto;
+}
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  .custom-btn {
+    background: $secondary-color;
+    color: $primary-color;
+    width: 125px;
+  }
 }
 
 

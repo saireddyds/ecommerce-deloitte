@@ -1,0 +1,28 @@
+[
+  {
+    "productCategoryName": "Sofa",
+    "productName": "Sofa White",
+    "productDescription": "Example 3 With a minimal design, this stylish writing desk was created with the purpose of intensifying the relationship between furniture and owner. Developed by Danish designer Mette Karina Johansen, the foldable desk is composed of a metal, linear base supporting stretched leather, which absorbs and moulds itself around the items held within the table, subsequently taking on new shapes, influenced by the owner's possessions.",
+    "productPrice": "$3999",
+    "productMedia": [
+      {
+        "media": "./assets/images/sample5.jpg"
+      },
+      {
+        "media": "./assets/images/sample6.jpg"
+      },
+      {
+        "media": "./assets/images/sample7.jpg"
+      },
+      {
+        "media": "./assets/images/sample4.jpg"
+      },
+      {
+        "media": "./assets/images/sample3.jpg"
+      },
+      {
+        "media": "./assets/images/sample1.jpg"
+      }
+    ]
+  }
+]
