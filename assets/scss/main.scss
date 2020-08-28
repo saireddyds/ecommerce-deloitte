@@ -56,6 +56,9 @@ body {
     width: 270px;
     padding-top: 4rem;
     cursor: pointer;
+    @include tablet {
+      width: 170px;
+    }
     @include phone {
       width: 100%;
     }
@@ -86,12 +89,22 @@ body {
     .price {
       float: right;
       padding-top: 0.5rem;
+      @include tablet {
+        position: absolute;
+        right: 0;
+      }
     }
 
   }
   .rating  {
     width: 270px;
     padding-top: 3rem;
+    @include tablet {
+      width: 100%;
+    }
+    @include phone {
+      width: 100%;
+    }
     & > span:hover:before {
       content: "\2605";
       position: absolute;

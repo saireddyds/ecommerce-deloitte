@@ -75,6 +75,11 @@ body {
   padding-top: 4rem;
   cursor: pointer;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .product-grid-view-wrapper .product-interior {
+    width: 170px;
+  }
+}
 @media (min-width: 340px) and (max-width: 767px) {
   .product-grid-view-wrapper .product-interior {
     width: 100%;
@@ -108,9 +113,25 @@ body {
   float: right;
   padding-top: 0.5rem;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .product-grid-view-wrapper .product-interior .price {
+    position: absolute;
+    right: 0;
+  }
+}
 .product-grid-view-wrapper .rating {
   width: 270px;
   padding-top: 3rem;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .product-grid-view-wrapper .rating {
+    width: 100%;
+  }
+}
+@media (min-width: 340px) and (max-width: 767px) {
+  .product-grid-view-wrapper .rating {
+    width: 100%;
+  }
 }
 .product-grid-view-wrapper .rating > span:hover:before {
   content: "★";
