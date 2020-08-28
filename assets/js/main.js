@@ -99,19 +99,15 @@ $(document).ready(function () {
     $('.js-page-reload').on('click', function() {
         location.reload();
     });
-    if ($("#isMobile").is(':visible')) {
-        $('#sidebarCollapse').click();
-    }
+    $(window).resize(function (event) {
+        if ($("#isMobile").is(':visible')) {
+            $('#sidebarCollapse').click();
+        } else {
+            $('#sidebar').removeClass('hide');
+        }
+    });
 });
-//refresh page on browser resize
-$(window).bind('resize', function(e)
-{
-    if (window.RT) clearTimeout(window.RT);
-    window.RT = setTimeout(function()
-    {
-        this.location.reload(false); /* false to get page from cache */
-    }, 200);
-});
+
 //util functions which can be reused// we can create a new js for this aw well
 class Util {
     static getSelectedCategoryCode($element) {
