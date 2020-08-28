@@ -2,19 +2,109 @@
   {
     "productName": "Coombes",
     "productMedia": "./assets/images/sample1.jpg",
-    "productCategory": "LOUNGE",
+    "productCategory": "LIVING ROOM,Teak",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample2.jpeg",
+    "productCategory": "LOUNGE,Teak",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Bed",
+    "productMedia": "./assets/images/sample3.jpg",
+    "productCategory": "LIVING ROOM,Indian Collection",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample4.jpg",
+    "productCategory": "LOUNGE,Teak",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample5.jpg",
+    "productCategory": "LIVING ROOM,Brown",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample6.jpg",
+    "productCategory": "LIVING ROOM",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample7.jpg",
+    "productCategory": "LOUNGE,USA Collection,Teak",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample3.jpg",
+    "productCategory": "BED ROOM,Indian Collection",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample4.jpg",
+    "productCategory": "LOUNGE,Brown",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample2.jpeg",
+    "productCategory": "LOUNGE,Brown,Teak",
     "productPrice": "$2,600"
   },
   {
     "productName": "Chair",
     "productMedia": "./assets/images/sample1.jpg",
+    "productCategory": "LOUNGE,USA Collection",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample5.jpg",
     "productCategory": "LOUNGE",
     "productPrice": "$2,600"
   },
   {
-    "productName": "Bed",
-    "productMedia": "./assets/images/sample1.jpg",
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample4.jpg",
+    "productCategory": "BED ROOM",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample6.jpg",
     "productCategory": "LOUNGE",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample7.jpg",
+    "productCategory": "LOUNGE",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample3.jpg",
+    "productCategory": "LOUNGE,Indian Collection",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample1.jpg",
+    "productCategory": "BED ROOM",
+    "productPrice": "$2,600"
+  },
+  {
+    "productName": "Chair",
+    "productMedia": "./assets/images/sample5.jpg",
+    "productCategory": "LOUNGE,USA Collection",
     "productPrice": "$2,600"
   }
 ]

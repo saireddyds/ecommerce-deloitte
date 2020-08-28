@@ -12,6 +12,9 @@ body {
     min-height: 100vh;
     width: 25rem;
     padding: 1rem;
+  @include phone {
+    width: 100%;
+  }
     &.hide {
       display: none;
     }
@@ -53,7 +56,18 @@ body {
     padding-top: 4rem;
     .product-img {
       height: 255px;
-      width: auto;
+      width: 270px;
+    }
+    @include tablet {
+      .product-img {
+        height: 240px;
+        width: 170px;
+      }
+    }
+    @include phone {
+      .product-img {
+        width: 100%;
+      }
     }
     .product-name {
       position: absolute;
@@ -83,6 +97,10 @@ body {
       float: right;
     }
   }
+}
+.selected {
+  background: $secondary-color;
+  color: $primary-color;
 }
 
 
